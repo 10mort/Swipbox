@@ -2,6 +2,22 @@
   margin: 0px;
   font-family: Inter;
 }
+/* Baggrund & General Layout */
+.homepageBackground {
+  background-image: url(images/bgMap.svg);
+  background-color: #d61212;
+}
+
+.homepageMain {
+  margin: 1px;
+  align-self: stretch;
+  padding: 20px;
+  border-radius: 30px 30px 0px 0px;
+  background: #ffffff;
+  box-shadow: 0px -4px 50px 0px #850000;
+}
+
+/* Appens navigation */
 
 header {
   margin: 50px 20px 10px 20px;
@@ -10,21 +26,6 @@ header {
   align-items: flex-start;
   align-self: stretch;
   z-index: -500;
-}
-
-.homepageBackground {
-  background-image: url(images/background_forms.png);
-  background-color: #d61212;
-}
-
-.homepageMain {
-  margin: 1px;
-  align-self: stretch;
-  height: 100px;
-  padding: 20px;
-  border-radius: 30px 30px 0px 0px;
-  background: #ffffff;
-  box-shadow: 0px -4px 50px 0px #850000;
 }
 
 .buttons {
@@ -44,7 +45,9 @@ header {
   gap: 8px;
   flex: 1 0 0;
   color: white;
-  background-color: #d61212;
+  background-image: linear-gradient(180deg, #a70000, #ff4141);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07),
+    0px -4px 0px 0px rgba(0, 0, 0, 0.2) inset, 0px 1px 0px 0px #fff inset;
   text-decoration: none;
   border-radius: 10px;
   font-size: 16px;
@@ -79,6 +82,52 @@ header {
   display: flex;
   flex-direction: row;
   gap: 8px;
+}
+
+.toggle {
+  display: flex;
+  padding: 4px;
+  margin: 12px 0px;
+  border-radius: 25px;
+  background: #dcdcdc;
+  gap: 8px;
+}
+
+.toggleActive {
+  text-align: center;
+  width: 100%;
+  padding: 4px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  background: #d61212;
+}
+
+.toggleInactive {
+  text-align: center;
+  width: 100%;
+  padding: 4px;
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.location {
+  width: auto;
+  display: inline-block;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 26px;
+  background: rgba(137, 110, 110, 0.24);
+  text-decoration: none;
+  color: black;
+}
+
+.locationImg {
+  padding: 0px 4px;
+  width: 14px;
+  height: 14px;
 }
 
 @media screen and (min-width: 375px) {
