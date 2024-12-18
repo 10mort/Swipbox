@@ -80,3 +80,15 @@ header {
   flex-direction: row;
   gap: 8px;
 }
+
+@media screen and (min-width: 375px) {
+  .container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+}
