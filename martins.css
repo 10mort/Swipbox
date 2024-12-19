@@ -81,47 +81,43 @@ header {
   gap: 8px;
 }
 
-.progressBar{
+.progressBar {
   height: 11px;
   flex: 1 0 0;
   border-radius: 30px;
-background: #FFF;
-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-backdrop-filter: blur(0.75px);
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(0.75px);
 }
 
 .menu {
   display: flex;
-padding: 5px;
-justify-content: center;
-align-items: center;
-color: white;
-border-radius: 50px;
-background: #FFF;
-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.30);
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .orderNr {
   color: black;
-  }
-
-.
-
-.orderNummer{
-  color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 32px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
 }
 
-
+.orderNummer {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 .openGate {
   display: flex;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   width: 301px;
   padding: 10px;
   flex-direction: column;
@@ -129,8 +125,12 @@ line-height: normal;
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  background: var(--button-color, linear-gradient(180deg, #A70000 0%, #FF4141 100%));
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07), 0px -4px 0px 0px rgba(0, 0, 0, 0.20) inset, 0px 1px 0px 0px #FFF inset;
+  background: var(
+    --button-color,
+    linear-gradient(180deg, #a70000 0%, #ff4141 100%)
+  );
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07),
+    0px -4px 0px 0px rgba(0, 0, 0, 0.2) inset, 0px 1px 0px 0px #fff inset;
 }
 
 @media only screen and (min-width: 320px) {
