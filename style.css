@@ -112,6 +112,48 @@ header {
   text-decoration: none;
 }
 
+.packageNames{
+  color: #000;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+display:flex;
+justify-content: left;
+}
+
+.packageBackground {
+display: flex;
+width: 364px;
+height: 78px;
+padding: 16px 8px;
+align-items: center;
+gap: -7px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #EDEDED;
+}
+
+.afhentningTxt{
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.checkbox {
+  display: flex;
+padding: 8px;
+justify-content: flex-end;
+align-items: center;
+border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
 .location {
   width: auto;
   display: inline-block;
@@ -157,14 +199,47 @@ aside {
   font-weight: bold;
 }
 
-@media screen and (min-width: 375px) {
-  .container {
-    display: flex;
+.orderNr {
+  color: black;
+}
+
+.orderNummer {
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.openGate {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  width: 301px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(
+    --button-color,
+    linear-gradient(180deg, #a70000 0%, #ff4141 100%)
+  );
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07),
+    0px -4px 0px 0px rgba(0, 0, 0, 0.2) inset, 0px 1px 0px 0px #fff inset;
+}
+
+@media only screen and (min-width: 320px) {
+  .p {
+    font-size: 35px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    display: flex;
+@media only screen and (min-width: 768px) {
+  .p {
+    font-size: 60px;
   }
 }
+
