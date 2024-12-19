@@ -2,6 +2,7 @@
   margin: 0px;
   font-family: Inter;
 }
+
 /* Baggrund & General Layout */
 .homepageBackground {
   background-image: url(images/bgMap.svg);
@@ -9,14 +10,22 @@
 }
 
 .homepageMain {
-  margin: 1px;
   align-self: stretch;
   padding: 20px;
   border-radius: 30px 30px 0px 0px;
   background: #ffffff;
   box-shadow: 0px -4px 50px 0px #850000;
+  flex: 1;
 }
 
+.collectionMain {
+  padding: 20px;
+  border-radius: 30px 30px 0px 0px;
+  background: #ffffff;
+  box-shadow: 0px -4px 50px 0px #850000;
+  flex-grow: 1;
+  min-height: 0;
+}
 /* Appens navigation */
 
 header {
@@ -112,30 +121,36 @@ header {
   text-decoration: none;
 }
 
-.packageNames{
+.packages {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.packageNames {
   color: #000;
-font-family: Inter;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-display:flex;
-justify-content: left;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: left;
 }
 
 .packageBackground {
-display: flex;
-width: 364px;
-height: 78px;
-padding: 16px 8px;
-align-items: center;
-gap: -7px;
-flex-shrink: 0;
-border-radius: 8px;
-background: #EDEDED;
+  display: flex;
+  width: 364px;
+  height: 78px;
+  padding: 16px 8px;
+  align-items: center;
+  gap: -7px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ededed;
 }
 
-.afhentningTxt{
+.afhentningTxt {
   color: #000;
   font-family: Inter;
   font-size: 13px;
@@ -146,12 +161,14 @@ background: #EDEDED;
 
 .checkbox {
   display: flex;
-padding: 8px;
-justify-content: flex-end;
-align-items: center;
-border-radius: 5px;
-background: #FFF;
-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  width: 20px;
+  height: 20px;
 }
 
 .location {
@@ -187,8 +204,6 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  flex: 1 0 0;
   color: white;
   background-image: linear-gradient(180deg, #a70000, #ff4141);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.07),
@@ -203,7 +218,7 @@ aside {
   color: black;
 }
 
-.orderNummer {
+.boxText {
   color: #000;
   text-align: center;
   font-family: Inter;
@@ -231,6 +246,52 @@ aside {
     0px -4px 0px 0px rgba(0, 0, 0, 0.2) inset, 0px 1px 0px 0px #fff inset;
 }
 
+.progressBar {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.subText {
+  font-size: 13px;
+}
+
+.pakkeboxImg {
+  height: 450px;
+  width: auto;
+  margin: 20px;
+}
+
+.icons {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.navInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.boxInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
 @media only screen and (min-width: 320px) {
   .p {
     font-size: 35px;
@@ -242,4 +303,3 @@ aside {
     font-size: 60px;
   }
 }
-
